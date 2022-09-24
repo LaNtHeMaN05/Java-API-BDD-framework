@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="cucumber.Options.TestRunner" time="1.679" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="cucumber.Options.TestRunner" time="2.929" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Program Files\Maven\apache-maven-3.8.5\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\lanaa\AppData\Local\Android\Sdk\tools\bin;C:\Users\lanaa\AppData\Local\Android\Sdk\tools;C:\Users\lanaa\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\lanaa\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\lanaa\AppData\Local\Programs\Python\Python38\;C:\Users\lanaa\AppData\Local\Microsoft\WindowsApps;C:\sqlite3;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.1\bin;C:\Users\lanaa\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm 2022.2\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.1\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\lanaa\AppData\Local\Android\Sdk\tools\bin;C:\Users\lanaa\AppData\Local\Android\Sdk\tools;C:\Users\lanaa\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\lanaa\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\lanaa\AppData\Local\Programs\Python\Python38\;C:\Users\lanaa\AppData\Local\Microsoft\WindowsApps;C:\sqlite3;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.1\bin;;C:\Users\lanaa\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm 2022.2\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.1\bin;;."/>
     <property name="maven.conf" value="C:\Program Files\Maven\apache-maven-3.8.5/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -65,5 +65,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Validating Place APis" name="Verify if Place is successfully added	using AddPlaceApi" time="1.679"/>
+  <testcase classname="Validating Place APis" name="Verify if Place is successfully added	using AddPlaceApi" time="1.389"/>
+  <testcase classname="I want to test all ReqRes Apis" name="Create a new User" time="0.575"/>
+  <testcase classname="I want to test all ReqRes Apis" name="Update a existing user" time="0.57"/>
+  <testcase classname="I want to test all ReqRes Apis" name="Get List of users from a page" time="0.395"/>
 </testsuite>

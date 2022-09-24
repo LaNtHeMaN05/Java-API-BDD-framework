@@ -5,15 +5,20 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
+import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import pojo.reqresCreateUser;
+import pojo.reqresGetUsers;
 import resources.ApiResources;
 import resources.TestDataBuild;
 
 public class ReqresStepDef {
 	RequestSpecification req;
+	ResponseSpecification res;
+	reqresGetUsers getUsersObject;
 	Response postReq;
 	Response thenResponse;
 	TestDataBuild tdb=new TestDataBuild();
@@ -29,7 +34,8 @@ public class ReqresStepDef {
 		postReq = req.when().post(ApiResources.valueOf(string).getResource());
 		}
 		else if(string2.equalsIgnoreCase("Get")) {
-			postReq = req.when().get(ApiResources.valueOf(string).getResource());
+			postReq = res.when().get(ApiResources.valueOf(string).getResource());
+			getUsersObject = res.when().get(ApiResources.valueOf(string).getResource()).as(reqresGetUsers.class);
 		}
 		else if(string2.equalsIgnoreCase("Put")) {
 			postReq = req.when().put(ApiResources.valueOf(string).getResource());
@@ -47,8 +53,8 @@ public class ReqresStepDef {
 		String repString=thenResponse.asString();
 		System.out.println(repString);
 		JsonPath jp=new JsonPath(repString);
-		String key = jp.get(string);
-		assertEquals(key, string2);
+		Object key = jp.get(string);
+		assertEquals(key.toString(), string2);
 		
 	}
 	
@@ -56,5 +62,11 @@ public class ReqresStepDef {
 	public void update_user_payload() {
 		req=given().baseUri("https://reqres.in").contentType(ContentType.JSON).log().all().body(tdb.reqUpdateUser());
 	}
+	
+	@Given("Get User Request")
+	public void get_user_request() {
+		res = given().baseUri("https://reqres.in").expect().defaultParser(Parser.JSON);
+	}
+
 
 }

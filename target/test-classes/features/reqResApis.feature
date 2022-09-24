@@ -11,3 +11,10 @@ Feature: I want to test all ReqRes Apis
 		When User hits "UpdateUser" with "Put" request
 		Then Api is successful with status code "200"
 		And "name" tag in response is "Lan"
+	@GetUsers
+	Scenario: Get List of users from a page
+		Given Get User Request
+		When User hits "GetUser" with "Get" request
+		Then Api is successful with status code "200"
+		And "page" tag in response is "2"
+		
